@@ -1,0 +1,88 @@
+:root {
+    --color-background: #121212;
+    --color-light-background: #101319;
+    --color-primary-box: #181C25;
+    --color-span: #0AFF8D;
+}
+
+
+
+@font-face {
+    font-family: 'Carmen Sans Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Carmen Sans Heavy'), url('../fonts/carmen-sans/Carmen Sans Heavy.woff') format('woff');
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    color: #f4f4f1;
+    font-family: 'Poppins';
+}
+
+.container {
+    min-width: 991px;
+    max-width: calc(100vw - 300px);
+    display: block;
+    margin: 0 auto;
+}
+
+@media(max-width: 767px) {
+    .container {
+        min-width: 100%;
+    }
+}
+
+
+/* Formatação da Nav */
+
+header {
+    min-height: 100px;
+    display: flex;
+    width: 100%;
+}
+
+.nav-logo img {
+    width: 2.8rem;
+}
+
+.nav-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    padding: 0 50px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin-left: 30px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    display: inline-block;
+    background-color: #E20749;
+    margin-left: 2.5px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.04rem;
+}
