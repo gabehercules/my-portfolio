@@ -1,10 +1,18 @@
 :root {
     --color-background: #121212;
-    --color-light-background: #101319;
-    --color-primary-box: #181C25;
-    --color-span: #0AFF8D;
+    --color-light-background: #141414;
+    --color-primary-box: #181818;
+
+    --color-contrast-primary: #E20749;
+
+    --color-title-primary: #efefef;
+    --color-text-primary: #bdbdbd;
+
+    --color-btn-call-primary: #E20749;
+    --color-btn-call-secondary: #181818;
 }
 
+/* Golbal Styles */
 
 
 @font-face {
@@ -22,7 +30,7 @@
 }
 
 body {
-    background-color: var(--color-background);
+    background-color: var(--color-light-background);
     color: #f4f4f1;
     font-family: 'Poppins';
 }
@@ -38,15 +46,44 @@ body {
     .container {
         min-width: 100%;
     }
+}   
+
+/* Global --> btn */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 300ms ease-out;
+    color: var(--color-text-primary);
+    text-decoration: none;
 }
 
+.btn-cta {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    background-color: var(--color-btn-call-secondary);
+}
+
+.btn-cta:hover {
+    background-color: var(--color-light-background);
+}
+
+.btn-budget {
+    background-color: var(--color-btn-call-primary);
+}
 
 /* Formatação da Nav */
-
 header {
+    background-color: var(--color-background);
+}
+
+.header {
     min-height: 100px;
     display: flex;
-    width: 100%;
+}
+
+.nav-logo {
+    display: flex;
 }
 
 .nav-logo img {
@@ -59,11 +96,11 @@ header {
     justify-content: space-between;
     align-items: center;
     min-height: 8vh;
-    padding: 0 50px;
 }
 
 .nav-links ul {
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
@@ -71,7 +108,7 @@ header {
     margin-left: 30px;
 }
 
-.nav-links ul li::after {
+.nav-links ul li .link-btn::after {
     content: '';
     width: 4px;
     height: 4px;
@@ -82,7 +119,59 @@ header {
 }
 
 .nav-links ul li a {
-    color: #fff;
+    color: var(--color-text-primary);
     text-decoration: none;
     font-size: 1.04rem;
+}
+
+
+/* Formatação Main - Hero Section */
+
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero {
+    width: 50%;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h3 {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+}
+
+.hero h1 {
+    font-size: 3.4rem;
+    width: 65%;
+    line-height: 110%;
+    color: var(--color-title-primary);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: var(--color-text-primary);
+    font-size: .8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+
+.hero-right .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: space-between;
+    height: 60%;
+}
+
+main {
+    background-color: var(--color-background);
+    padding: 50px 0;
 }
