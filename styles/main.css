@@ -33,7 +33,6 @@ body {
     background-color: var(--color-light-background);
     color: #f4f4f1;
     font-family: 'Poppins';
-    height: 500vh;
 }
 
 .container {
@@ -78,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-budget {
     background-color: var(--color-btn-call-primary);
+    color: var(--color-title-primary);
 }
 
 /* Formatação da Nav */
@@ -167,7 +167,6 @@ main {
 .hero h1 {
     font-size: 3.4rem;
     width: 65%;
-    line-height: 110%;
     color: var(--color-title-primary);
     margin-bottom: 20px;
 }
@@ -194,6 +193,7 @@ main {
 .projects-heading {
     display: flex;
     margin-bottom: 50px;
+    margin-top: 5px;
 }
 
 .title {
@@ -361,4 +361,54 @@ main {
 
 .talk-text a {
     color: var(--color-contrast-primary);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--color-background);
+    height: auto;
+    padding: 1.86rem 0;
+}
+
+.footer-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-list .list-links {
+    display: flex;
+    list-style: none;
+}
+
+.page-list .list-links li {
+    margin-right: 20px;
+}
+
+.page-list .list-links li a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-size: .9rem;
+}
+
+.page-list .list-links li a:hover {
+    text-decoration: underline var(--color-contrast-primary);
+    color: var(--color-text-primary);
+}
+
+.page-list .list-links li a.budget {
+    color: var(--color-contrast-primary);
+}
+.copyright p {
+    color: var(--color-text-primary);
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.copyright p img {
+    width: .9rem;
+    margin: 0 5px;
 }
