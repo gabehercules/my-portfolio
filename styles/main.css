@@ -33,6 +33,7 @@ body {
     background-color: var(--color-light-background);
     color: #f4f4f1;
     font-family: 'Poppins';
+    height: 500vh;
 }
 
 .container {
@@ -46,7 +47,14 @@ body {
     .container {
         min-width: 100%;
     }
-}   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-title-primary);
+    line-height: 110%;
+    margin: 0;
+    padding: 0;
+}
 
 /* Global --> btn */
 .btn {
@@ -127,9 +135,19 @@ header {
 
 /* Formatação Main - Hero Section */
 
+main {
+    background-color: var(--color-light-background);
+    height: calc(100vh - 100px);
+}
+
+.main-section {
+    background-color: var(--color-background);
+}
+
 .hero-section {
     display: flex;
     flex-wrap: wrap;
+    padding: 50px 0;
 }
 
 .hero {
@@ -156,7 +174,7 @@ header {
 
 .hero p {
     color: var(--color-text-primary);
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -171,7 +189,176 @@ header {
     height: 60%;
 }
 
-main {
+/* Projects Section */
+
+.projects-heading {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.title {
+    width: 80%;
+}
+
+.title h2 {
+    font-size: 2.2rem;
+    color: var(--color-title-primary);
+}
+
+.budget-projects {
+    width: 20%;
+    text-align: end;
+}
+
+/* Projects Collection */
+
+.projects-collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "post post post" "post post post";
+    grid-gap: 60px;
+}
+
+.post-card .link-post {
+    grid-area: post;
+    display: grid;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.post-card .link-post img {
+    width: 100%;
+    border-radius: 5px;
+    transition: all 600ms ease-in-out;
+}
+
+.post-card .link-post img:hover {
+    transform: scale(1.035);
+}
+
+/* How do I work - My workflow */
+
+.how-work {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.how-work .how-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 58px;
+}
+
+.how-work .how-heading::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-contrast-primary);
+    margin-top: 1rem;
+}
+
+.how-work .how-heading .how-title {
+    max-width: 30%;
+    min-width: 350px;
+}
+
+.how-title h2 {
+    font-size: 2.2rem;
+}
+
+.how-work .how-heading .side-text {
+    max-width: 60%;
+    min-width: 625px;
+}
+
+.side-text p {
+    font-size: .9rem;
+    color: var(--color-text-primary);
+}
+
+.how-work .how-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.how-work .how-boxes .how-item {
+    min-width: 220px;
+    width: calc(100% / 4 - 10px);
+    border-radius: 5px;
+}
+
+.how-work .how-boxes .how-item .how-top {
+    height: auto;
+    padding: 1.86rem 1.12rem;
+    background-color: var(--color-primary-box);
+}
+
+.how-work .how-boxes .how-item .how-body {
+    min-height: 200px;
+    padding: 1.86rem 1.12rem;
     background-color: var(--color-background);
-    padding: 50px 0;
+}
+
+.how-top h3 {
+    color: var(--color-title-primary);
+    margin-bottom: 5px;
+}
+
+.how-top h4 {
+    font-weight: 400;
+    color: var(--color-text-primary);
+}
+
+.how-body p {
+    font-size: .9rem;
+    color: var(--color-text-primary);
+    line-height: 150%;
+    font-weight: 400;
+}
+
+/* Lets Talk */
+
+.lets-talk .letstalk-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 58px;
+}
+
+.lets-talk .letstalk-heading::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-contrast-primary);
+    margin-top: 1rem;
+}
+
+.lets-talk .letstalk-heading .talk-title {
+    max-width: 30%;
+    min-width: 350px;
+}
+
+.talk-title h2 {
+    font-size: 2.2rem;
+}
+
+.lets-talk .letstalk-heading .talk-text {
+    max-width: 60%;
+    min-width: 625px;
+}
+
+.talk-text p {
+    font-size: .9rem;
+    color: var(--color-text-primary);
+}
+
+.talk-text a {
+    color: var(--color-contrast-primary);
 }
