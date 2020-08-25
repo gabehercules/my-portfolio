@@ -77,7 +77,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-budget {
     background-color: var(--color-btn-call-primary);
-    color: var(--color-title-primary);
+    color: var(--color-title-primary) !important;
+}
+
+img.btn-icon { /* Formats the icon in the buttons */
+    height: 12px;
+    vertical-align: middle;
+    margin-left: .9rem;
 }
 
 /* Formatação da Nav */
@@ -241,7 +247,7 @@ main {
 
 .how-work {
     margin-top: 120px;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 }
 
 .how-work .how-heading {
@@ -321,6 +327,64 @@ main {
     font-weight: 400;
 }
 
+
+/* Advantages Section*/
+
+.advantages-section {
+    margin: 120px 0;
+}
+
+.advantages-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 58px;
+}
+
+.advantages-heading::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-contrast-primary);
+    margin-top: 1rem;
+}
+
+.advantages-title {
+    max-width: 30%;
+    min-width: 350px;
+}
+
+.advantages-title h2 {
+    font-size: 2.2rem;
+    color: var(--color-title-primary);
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.advantage-item {
+    flex: 0 1 calc(50% - 1.3rem);
+    background-color: var(--color-primary-box);
+    padding: 1.6rem;
+    margin-bottom: 2.6rem;
+}
+
+.advantage-item h3 {
+    margin-bottom: 1.8rem;
+}
+
+.advantage-item p {
+    color: var(--color-text-primary);
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+
+
 /* Lets Talk */
 
 .lets-talk .letstalk-heading {
@@ -362,6 +426,9 @@ main {
 .talk-text a {
     color: var(--color-contrast-primary);
 }
+
+
+
 
 
 /* Footer */
