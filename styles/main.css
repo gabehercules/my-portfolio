@@ -12,6 +12,23 @@
     --color-btn-call-secondary: #181818;
 }
 
+
+@media (min-width: 1440px) {
+    :root {
+        font-size: 120%;
+    }
+
+    .container {
+        min-width: 991px;
+        max-width: calc(100vw - 190px);
+    }
+}
+
+@media (min-width: 1620px) {
+    :root {
+        font-size: 130%;
+    }
+}
 /* Golbal Styles */
 
 
@@ -42,9 +59,18 @@ body {
     margin: 0 auto;
 }
 
+
+@media (min-width: 1440px) {
+    .container {
+        min-width: 991px;
+        max-width: calc(100vw - 190px);
+    }
+}
+
 @media(max-width: 767px) {
     .container {
-        min-width: 100%;
+        width: 100%;
+        padding: 0 15px;
     }
 }
 
@@ -119,7 +145,7 @@ header {
 }
 
 .nav-links ul li {
-    margin-left: 30px;
+    margin-left: 2.2rem;
 }
 
 .nav-links ul li .link-btn::after {
@@ -129,13 +155,13 @@ header {
     border-radius: 2px;
     display: inline-block;
     background-color: #E20749;
-    margin-left: 2.5px;
+    margin-left: 2px;
 }
 
 .nav-links ul li a {
     color: var(--color-text-primary);
     text-decoration: none;
-    font-size: 1.04rem;
+    font-size: .9rem;
 }
 
 
@@ -153,7 +179,7 @@ main {
 .hero-section {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 0;
+    padding: 3.4rem 0;
 }
 
 .hero {
@@ -168,20 +194,21 @@ main {
 .hero h3 {
     font-size: 1rem;
     color: var(--color-text-primary);
+    margin-bottom: .8rem;
 }
 
 .hero h1 {
     font-size: 3.4rem;
     width: 65%;
     color: var(--color-title-primary);
-    margin-bottom: 20px;
+    margin-bottom: 1.6rem;
 }
 
 .hero p {
     color: var(--color-text-primary);
     font-size: .9rem;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 1.6rem;
 }
 
 /* Social Icons */
@@ -198,8 +225,8 @@ main {
 
 .projects-heading {
     display: flex;
-    margin-bottom: 50px;
-    margin-top: 5px;
+    margin-bottom: 3.6rem;
+    margin-top: .4rem;
 }
 
 .title {
@@ -222,7 +249,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "post post post" "post post post";
+    grid-template-areas: "post post post" "post post";
     grid-gap: 60px;
 }
 
@@ -255,16 +282,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 58px;
-}
-
-.how-work .how-heading::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-contrast-primary);
-    margin-top: 1rem;
+    margin-bottom: 3.6rem;
 }
 
 .how-work .how-heading .how-title {
@@ -294,7 +312,7 @@ main {
 
 .how-work .how-boxes .how-item {
     min-width: 220px;
-    width: calc(100% / 4 - 10px);
+    width: calc(100% / 4 - 1rem);
     border-radius: 5px;
 }
 
@@ -312,12 +330,17 @@ main {
 
 .how-top h3 {
     color: var(--color-title-primary);
-    margin-bottom: 5px;
+    margin-bottom: .4rem;
 }
 
 .how-top h4 {
     font-weight: 400;
     color: var(--color-text-primary);
+}
+
+.how-top h4 img {
+    vertical-align: middle;
+    float: right;
 }
 
 .how-body p {
@@ -331,7 +354,7 @@ main {
 /* Advantages Section*/
 
 .advantages-section {
-    margin: 120px 0;
+    margin-bottom: 120px;
 }
 
 .advantages-heading {
@@ -339,16 +362,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 58px;
-}
-
-.advantages-heading::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-contrast-primary);
-    margin-top: 1rem;
+    margin-bottom: 3.6rem;
 }
 
 .advantages-title {
@@ -386,22 +400,16 @@ main {
 
 
 /* Lets Talk */
+.lets-talk {
+    margin-bottom: 3.6rem;
+}
 
 .lets-talk .letstalk-heading {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 58px;
-}
-
-.lets-talk .letstalk-heading::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-contrast-primary);
-    margin-top: 1rem;
+    margin-bottom: 3.6rem;
 }
 
 .lets-talk .letstalk-heading .talk-title {
@@ -427,6 +435,11 @@ main {
     color: var(--color-contrast-primary);
 }
 
+.talk-value p {
+    font-size: 2rem;
+    color: var(--color-text-primary);
+    font-style: oblique;
+}
 
 
 
