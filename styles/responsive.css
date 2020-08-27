@@ -55,3 +55,9 @@
         grid-template-areas: "post" "post";
     }
 }
+
+header,
+.header,
+main {
+    display: none;
+}
