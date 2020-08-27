@@ -1,0 +1,57 @@
+/* Global Responsive */
+
+
+/* Responsive Containers */
+
+@media (min-width: 1440px) {
+    .container {
+        min-width: 991px;
+        max-width: calc(100vw - 190px);
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+@media(max-width: 460px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+
+
+
+
+
+
+/* Responsive Projects Section */
+
+
+@media (max-width: 991px) {
+    .projects-collection {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "post post" "post post";
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-collection {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "post" "post";
+    }
+}

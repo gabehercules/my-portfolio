@@ -59,21 +59,6 @@ body {
     margin: 0 auto;
 }
 
-
-@media (min-width: 1440px) {
-    .container {
-        min-width: 991px;
-        max-width: calc(100vw - 190px);
-    }
-}
-
-@media(max-width: 767px) {
-    .container {
-        width: 100%;
-        padding: 0 15px;
-    }
-}
-
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-title-primary);
     line-height: 110%;
@@ -249,7 +234,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "post post post" "post post";
+    grid-template-areas: "post post post" "post post post";
     grid-gap: 60px;
 }
 
