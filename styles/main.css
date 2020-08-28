@@ -13,22 +13,6 @@
 }
 
 
-@media (min-width: 1440px) {
-    :root {
-        font-size: 120%;
-    }
-
-    .container {
-        min-width: 991px;
-        max-width: calc(100vw - 190px);
-    }
-}
-
-@media (min-width: 1620px) {
-    :root {
-        font-size: 130%;
-    }
-}
 /* Golbal Styles */
 
 
@@ -48,13 +32,13 @@
 
 body {
     background-color: var(--color-light-background);
-    color: #f4f4f1;
+    color: var(--color-title-primary);
     font-family: 'Poppins';
 }
 
 .container {
-    min-width: 991px;
-    max-width: calc(100vw - 300px);
+    width: 86vw;
+    max-width: 1099px;
     display: block;
     margin: 0 auto;
 }
@@ -266,13 +250,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 3.6rem;
 }
 
 .how-work .how-heading .how-title {
-    max-width: 30%;
-    min-width: 350px;
+    min-width: 40%;
 }
 
 .how-title h2 {
@@ -280,8 +263,8 @@ main {
 }
 
 .how-work .how-heading .side-text {
-    max-width: 60%;
-    min-width: 625px;
+    min-width: 60%;
+    flex: 1 1;
 }
 
 .side-text p {
@@ -346,18 +329,27 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 3.6rem;
 }
 
 .advantages-title {
-    max-width: 30%;
-    min-width: 350px;
+    min-width: 40%;
 }
 
 .advantages-title h2 {
     font-size: 2.2rem;
     color: var(--color-title-primary);
+}
+
+.advantages-text {
+    min-width: 60%;
+    flex: 1 1;
+}
+
+.advantages-text p {
+    color: var(--color-text-primary);
+    font-size: .9rem;
 }
 
 .advantages-list {
@@ -398,8 +390,7 @@ main {
 }
 
 .lets-talk .letstalk-heading .talk-title {
-    max-width: 30%;
-    min-width: 350px;
+    width: 40%;
 }
 
 .talk-title h2 {
@@ -407,8 +398,8 @@ main {
 }
 
 .lets-talk .letstalk-heading .talk-text {
-    max-width: 60%;
-    min-width: 625px;
+    min-width: 60%;
+    flex: 1 1;
 }
 
 .talk-text p {

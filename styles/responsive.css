@@ -1,5 +1,24 @@
 /* Global Responsive */
 
+/* Root */
+
+@media (min-width: 1620px) {
+    :root {
+        font-size: 130%;
+    }
+}
+
+@media (min-width: 1440px) {
+    :root {
+        font-size: 120%;
+    }
+}
+
+@media (max-width:460px) {
+    :root {
+        font-size: xxx-large;
+    }
+} 
 
 /* Responsive Containers */
 
@@ -54,10 +73,40 @@
         grid-template-rows: auto;
         grid-template-areas: "post" "post";
     }
+
+    .projects-heading {
+        display: flex;
+        margin-bottom: 3.6rem;
+        flex-direction: column;
+        margin-top: .4rem;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .budget-projects {
+        width: 100%;
+        text-align: initial;
+    }
 }
 
-header,
-.header,
-main {
-    display: none;
+
+
+/* How Work Responsive*/
+@media (max-width: 991px) {
+    .how-work .how-heading .how-title {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .advantages-title {
+        min-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .lets-talk .letstalk-heading .talk-title {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
