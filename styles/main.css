@@ -468,3 +468,9 @@ footer {
     width: .9rem;
     margin: 0 5px;
 }
+
+header,
+.header,
+main {
+    display: none;
+}
