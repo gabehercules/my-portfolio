@@ -459,6 +459,7 @@ footer {
     color: var(--color-text-primary);
     font-weight: 400;
     font-size: .9rem;
+    text-align: center;
 }
 
 .copyright p img {
