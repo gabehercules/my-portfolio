@@ -19,32 +19,56 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            height: 60px;
+            height: 65px;
             background-color: #181818;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .__nav-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            min-width: 50px;
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: "Poppins";
+            color: #bdbdbd;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .nav-budget {
+            background-color: #E20749;
+        }
+
+        .__nav-link img {
+            width: 32px;
+            padding: 5px;
+            background-color: #121212;
+            border-radius: 3px;
         }
 
 
     </style>
     <nav class="mobile-nav">
-        <a href="">
+        <a href="" class="__nav-link">
             <img src="/images/icons/icon-home.svg" alt="Início">
-            <span>Início</span>
         </a>
-        <a href="">
+        <a href="" class="__nav-link">
             <img src="/images/icons/icon-portfolio.svg" alt="Portfólio">
-            <span>Portfólio</span>
         </a>
-        <a href="">
-            <img src="/images/icons/go-form.svg" alt="Orçamento">
+        <a href="" class="__nav-link nav-budget">
+            <img src="/images/icons/icon-home.svg" alt="Orçamento">
             <span>Orçamento</span>
         </a>
-        <a href="">
-            <img src="/images/social-icons/whatsapp-icon.svg" alt="Whatsapp">
-            <span>Whatsapp</span>
+        <a href="" class="__nav-link">
+            <img src="/images/icons/icon-home.svg" alt="Whatsapp">
         </a>
-        <a href="">
-            <img src="/images/social-icons/instagram-icon.svg" alt="Instagram">
-            <span>Instagram</span>
+        <a href="" class="__nav-link">
+            <img src="/images/icons/icon-home.svg" alt="Instagram">
         </a>
     </nav>
 
