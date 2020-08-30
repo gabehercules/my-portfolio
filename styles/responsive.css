@@ -23,6 +23,15 @@
     }
 }
 
+@media (max-width: 1024px) {
+    /* How work responsive */
+
+    .how-work .how-boxes .how-item {
+        width: calc(100% / 2 - 1rem);
+        margin-bottom: 2rem;
+    }
+}
+
 @media (max-width: 991px) {
     .container {
         width: 100%;
@@ -37,20 +46,11 @@
     }
 }
 
-@media(max-width: 460px) {
-    .container {
-        width: 100%;
-        padding: 0 1rem;
-    }
-}
-
 @media (min-width: 600px) {
     .mobile-nav {
         display: none;
     }
 }
-
-
 
 @media (max-width: 600px) {
 
@@ -104,11 +104,21 @@
         margin-top: -3rem;
     }
 
-    /* How work responsive */
+    .hero p {
+        width: 70%;
+    }
+
+    /* How work */
 
     .how-work .how-boxes .how-item {
-        width: calc(100% / 2 - 1rem);
+        width: 100%;
         margin-bottom: 2rem;
+    }
+
+    /* Advantages List */
+
+    .advantage-item {
+        flex: 0 1 100%;
     }
 
     /* Footer on nav mobile */
@@ -120,6 +130,19 @@
         padding-bottom: 5rem;
     }
 }
+
+@media(max-width: 460px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+
+
+
+
+
 
 
 /* Hero Section */
@@ -177,6 +200,17 @@
     }
     .hero-right .social-icons a {
         margin-right: 0;
+    }
+
+    .hero p {
+        width: 100%;
+    }
+}
+
+@media (max-width:350px) {
+    .hero h1 {
+        font-size: 2.4rem;
+        margin-bottom: 1.6rem;
     }
 }
 

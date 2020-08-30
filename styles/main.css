@@ -176,6 +176,7 @@ main {
     color: var(--color-text-primary);
     font-size: .9rem;
     font-weight: 400;
+    width: 50%;
     margin-bottom: 1.6rem;
 }
 
@@ -198,7 +199,7 @@ main {
 }
 
 .title {
-    width: 80%;
+    flex: 1;
 }
 
 .title h2 {
@@ -207,8 +208,6 @@ main {
 }
 
 .budget-projects {
-    width: 20%;
-    text-align: end;
 }
 
 /* Projects Collection */
