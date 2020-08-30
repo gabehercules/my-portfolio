@@ -104,3 +104,14 @@
         margin-bottom: 1rem;
     }
 }
+
+
+
+@media (max-width: 991px) {
+    .footer-body {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        min-height: 150px;
+    }
+}
+
