@@ -104,6 +104,13 @@
         margin-top: -3rem;
     }
 
+    /* How work responsive */
+
+    .how-work .how-boxes .how-item {
+        width: calc(100% / 2 - 1rem);
+        margin-bottom: 2rem;
+    }
+
     /* Footer on nav mobile */
 
     footer {
@@ -118,6 +125,11 @@
 /* Hero Section */
 
 @media (max-width: 768px) {
+
+    main {
+        height: 100vh;
+    }
+
     .hero-section {
         flex-direction: column-reverse;
         padding-top: 3.4rem !important;
@@ -125,10 +137,6 @@
     }
 
     .hero-left {
-        width: 100%;
-    }
-
-    .hero h1 {
         width: 100%;
     }
 
@@ -203,7 +211,8 @@
 
     .title {
         width: 100%;
-    }
+        margin-bottom: 2rem;
+}
 
     .budget-projects {
         width: 100%;

@@ -168,7 +168,6 @@ main {
 
 .hero h1 {
     font-size: 3.4rem;
-    width: 65%;
     color: var(--color-title-primary);
     margin-bottom: 1.6rem;
 }
