@@ -1,8 +1,1 @@
-<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="12" height="11" fill="#E5E5E5"/>
-<rect width="1440" height="6241" transform="translate(-1273 -838)" fill="#EFEFEF"/>
-<rect x="-1273" y="-838" width="1440" height="868" fill="#141414"/>
-<rect x="-1273" y="-308" width="1440" height="1601" fill="#141414"/>
-<rect x="-118" y="-15" width="150" height="40" rx="5" fill="#E20749"/>
-<path d="M0 0H2.66667V2.66667H0V0ZM4 0.666667V2H12V0.666667H4ZM0 4H2.66667V6.66667H0V4ZM4 4.66667V6H12V4.66667H4ZM0 8H2.66667V10.6667H0V8ZM4 8.66667V10H12V8.66667H4Z" fill="#141414"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 378"><defs><style>.cls-1{fill:#141414;}</style></defs><title>go-form</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" x="108" y="9" width="252" height="54"/><rect class="cls-1" width="72" height="72"/><rect class="cls-1" y="153" width="72" height="72"/><rect class="cls-1" y="306" width="72" height="72"/><rect class="cls-1" x="108" y="315" width="252" height="54"/><rect class="cls-1" x="108" y="162" width="252" height="54"/></g></g></svg>
