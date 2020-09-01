@@ -1,0 +1,52 @@
+
+
+/* Footer Styled */
+
+
+
+footer {
+    background-color: var(--color-background);
+    height: auto;
+    padding: 1.86rem 0;
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-list .list-links {
+    display: flex;
+    list-style: none;
+}
+
+.page-list .list-links li {
+    margin-right: 20px;
+}
+
+.page-list .list-links li a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-size: .9rem;
+}
+
+.page-list .list-links li a:hover {
+    text-decoration: underline var(--color-contrast-primary);
+    color: var(--color-text-primary);
+}
+
+.page-list .list-links li a.budget {
+    color: var(--color-contrast-primary);
+}
+.copyright p {
+    color: var(--color-text-primary);
+    font-weight: 400;
+    font-size: .9rem;
+    text-align: center;
+}
+
+.copyright p img {
+    width: .9rem;
+    margin: 0 5px;
+}

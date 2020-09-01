@@ -1,0 +1,52 @@
+:root {
+    --color-background: #121212;
+    --color-light-background: #141414;
+    --color-primary-box: #181818;
+
+    --color-contrast-primary: #E20749;
+
+    --color-title-primary: #efefef;
+    --color-text-primary: #bdbdbd;
+
+    --color-btn-call-primary: #E20749;
+    --color-btn-call-secondary: #181818;
+}
+
+
+/* Global Styles for Elements */
+
+
+p a {
+    color: var(--color-contrast-primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--color-primary-box);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-contrast-primary);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-contrast-primary);
+  }

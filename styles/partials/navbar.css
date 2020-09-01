@@ -1,0 +1,68 @@
+:root {
+    --color-background: #121212;
+    --color-light-background: #141414;
+    --color-primary-box: #181818;
+
+    --color-contrast-primary: #E20749;
+
+    --color-title-primary: #efefef;
+    --color-text-primary: #bdbdbd;
+
+    --color-btn-call-primary: #E20749;
+    --color-btn-call-secondary: #181818;
+}
+
+
+
+/* Formatação da Nav */
+
+
+header {
+    background-color: var(--color-background);
+}
+
+.header {
+    min-height: 100px;
+    display: flex;
+}
+
+.nav-logo {
+    display: flex;
+}
+
+.nav-logo img {
+    width: 2.8rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin-left: 2.2rem;
+}
+
+.nav-links ul li .link-btn::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    display: inline-block;
+    background-color: #E20749;
+    margin-left: 2px;
+}
+
+.nav-links ul li a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: .9rem;
+}

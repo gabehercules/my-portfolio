@@ -1,0 +1,15 @@
+{
+    "name": "Gabriel Hercules | Brand Experience Designer",
+    "short_name": "Gabriel Hercules | Brand Experience Designer",
+    "start_url": ".",
+    "background_color": "#121212",
+    "theme_color": "#E20749",
+    "dispay": "stadalone",
+    "icons": [
+        {
+            "src": "images/logos/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ] 
+}

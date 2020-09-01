@@ -81,57 +81,7 @@ img.btn-icon { /* Formats the icon in the buttons */
     margin-left: .9rem;
 }
 
-/* Formatação da Nav */
-header {
-    background-color: var(--color-background);
-}
-
-.header {
-    min-height: 100px;
-    display: flex;
-}
-
-.nav-logo {
-    display: flex;
-}
-
-.nav-logo img {
-    width: 2.8rem;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 8vh;
-}
-
-.nav-links ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-.nav-links ul li {
-    margin-left: 2.2rem;
-}
-
-.nav-links ul li .link-btn::after {
-    content: '';
-    width: 4px;
-    height: 4px;
-    border-radius: 2px;
-    display: inline-block;
-    background-color: #E20749;
-    margin-left: 2px;
-}
-
-.nav-links ul li a {
-    color: var(--color-text-primary);
-    text-decoration: none;
-    font-size: .9rem;
-}
-
+/* Nav Menu styles is in --> /styles/partials */
 
 /* Formatação Main - Hero Section */
 
@@ -410,57 +360,5 @@ main {
     font-size: 2rem;
     color: var(--color-text-primary);
     font-style: oblique;
-}
-
-
-
-
-/* Footer */
-
-footer {
-    background-color: var(--color-background);
-    height: auto;
-    padding: 1.86rem 0;
-}
-
-.footer-body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.page-list .list-links {
-    display: flex;
-    list-style: none;
-}
-
-.page-list .list-links li {
-    margin-right: 20px;
-}
-
-.page-list .list-links li a {
-    text-decoration: none;
-    color: var(--color-text-primary);
-    font-size: .9rem;
-}
-
-.page-list .list-links li a:hover {
-    text-decoration: underline var(--color-contrast-primary);
-    color: var(--color-text-primary);
-}
-
-.page-list .list-links li a.budget {
-    color: var(--color-contrast-primary);
-}
-.copyright p {
-    color: var(--color-text-primary);
-    font-weight: 400;
-    font-size: .9rem;
-    text-align: center;
-}
-
-.copyright p img {
-    width: .9rem;
-    margin: 0 5px;
 }
 

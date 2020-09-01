@@ -1,0 +1,54 @@
+:root {
+    --color-background: #121212;
+    --color-light-background: #141414;
+    --color-primary-box: #181818;
+
+    --color-contrast-primary: #E20749;
+
+    --color-title-primary: #efefef;
+    --color-text-primary: #bdbdbd;
+
+    --color-btn-call-primary: #E20749;
+    --color-btn-call-secondary: #181818;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Heading */
+
+.contact-heading {
+    padding: 50px 0;
+    background-color: var(--color-background);
+}
+
+.contact-content h1 {
+    font-size: 3.4rem;
+    color: var(--color-title-primary);
+    margin-bottom: 1.6rem;
+}
+
+.contact-content p {
+    color: var(--color-text-primary);
+    font-size: .9rem;
+    font-weight: 400;
+    width: 50%;
+    margin-bottom: 1.6rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+@media (max-width: 767px) {
+    .contact-content p {
+        width: 100%;
+    }
+}
