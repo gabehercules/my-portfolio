@@ -87,6 +87,14 @@
         text-decoration: none;
     }
 
+    .__nav-link:focus {
+        background-color: transparent;
+    }
+
+    .__nav-link:active {
+        background-color: transparent;
+    }
+
     .nav-budget {
         background-color: var(--color-background);
     }

@@ -1,0 +1,88 @@
+:root {
+    --color-background: #121212;
+    --color-light-background: #141414;
+    --color-primary-box: #181818;
+
+    --color-contrast-primary: #E20749;
+
+    --color-title-primary: #efefef;
+    --color-text-primary: #bdbdbd;
+
+    --color-btn-call-primary: #E20749;
+    --color-btn-call-secondary: #181818;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Heading */
+
+.portfolio-heading {
+    padding: 50px 0;
+    background-color: var(--color-background);
+}
+
+.portfolio-content h1 {
+    font-size: 3.4rem;
+    color: var(--color-title-primary);
+    margin-bottom: 1.6rem;
+}
+
+.portfolio-content p {
+    color: var(--color-text-primary);
+    font-size: .9rem;
+    font-weight: 400;
+    width: 50%;
+    margin-bottom: 1.6rem;
+}
+
+
+
+
+
+/* porfolio grid */
+
+.projects-grid {
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 50px;
+    grid-template-areas: "post post";
+}
+
+.projects-grid a {
+    display: grid;
+}
+
+.projects-grid a img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+footer {
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+
+    .portfolio-content p {
+        width: 100%;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 0;
+        row-gap: 50px;
+    }
+}
