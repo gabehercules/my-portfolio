@@ -296,5 +296,16 @@
         justify-content: space-between;
         min-height: 150px;
     }
+
+    .page-list .list-links {
+        display: flex;
+        list-style: none;
+        min-width: 200px;
+        justify-content: space-between;
+    }
+
+    .page-list .list-links li {
+        margin: 0;
+    }
 }
 
