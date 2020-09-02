@@ -57,7 +57,7 @@ header {
     height: 4px;
     border-radius: 2px;
     display: inline-block;
-    background-color: #E20749;
+    background-color: var(--color-contrast-primary);
     margin-left: 2px;
 }
 
@@ -69,4 +69,14 @@ header {
 
 .nav-links ul li a.active {
     color: var(--color-contrast-primary);
+}
+
+.nav-links ul li a.active::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    display: inline-block;
+    background-color: var(--color-text-primary);
+    margin-left: 2px;
 }
