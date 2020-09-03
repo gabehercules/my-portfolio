@@ -82,7 +82,8 @@ footer {
     .projects-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        column-gap: 0;
-        row-gap: 50px;
+        grid-template-areas:
+            "post"
+            "post";
     }
 }
