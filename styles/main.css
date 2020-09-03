@@ -227,11 +227,14 @@ main {
     min-width: 220px;
     width: calc(100% / 4 - 1rem);
     border-radius: 5px;
+    background-color: var(--color-background);
 }
 
 .how-work .how-boxes .how-item .how-top {
     height: auto;
     padding: 1.86rem 1.12rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     background-color: var(--color-primary-box);
 }
 
@@ -239,6 +242,8 @@ main {
     min-height: 200px;
     padding: 1.86rem 1.12rem;
     background-color: var(--color-background);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .how-top h3 {
