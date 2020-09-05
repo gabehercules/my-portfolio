@@ -25,6 +25,21 @@
     margin-bottom: 1.6rem;
 }
 
+.project-content h4 {
+    color: var(--color-text-primary);
+    margin-bottom: 1.2rem;
+}
+
+.project-content h4::before {
+    content: '';
+    background-color: var(--color-contrast-primary);
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin-right: 6px;
+}
+
 .project-content p {
     color: var(--color-text-primary);
     font-size: .9rem;
